@@ -12,4 +12,4 @@ These passwords don't exist in your keychain, **IF THEY DO, THEY'LL BE UPDATED**
 
 <Br><br><br>
 
-**`Your passwords will be UPDATED and REPLACED, you've been warned`**
+**`If the password exists it will be UPDATED, you've been warned`**
