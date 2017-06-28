@@ -4,7 +4,7 @@ import csv, os, re
 count = 0
 
 #CSV file to load
-csvFile = 'googlepass.csv'
+csvFile = 'example_google_password_list.csv'
 
 #Open the CSV file, loop through each line and run the add-internet-password command
 with open(csvFile) as csvfile:
