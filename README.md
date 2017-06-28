@@ -13,3 +13,14 @@ These passwords don't exist in your keychain, **IF THEY DO, THEY'LL BE UPDATED**
 <Br><br><br>
 
 **`If the password exists it will be UPDATED, you've been warned`**
+
+
+<br><br><br>
+
+**Chrome users**
+
+You need to enable the _Password import and export_ flag in _chrome://flags_ once that's done you can export your none encrypted passwords by going to _chrome://settings-frame/passwords_ and pressing the export button.
+
+<br><br>
+
+Once that's done you can go ahead and run the google_import.py script.

@@ -4,14 +4,14 @@ import csv, os, re
 count = 0
 
 #CSV file to load
-csvFile = 'example_password_list.csv'
+csvFile = 'example_google_password_list.csv'
 
 #Open the CSV file, loop through each line and run the add-internet-password command
 with open(csvFile) as csvfile:
     reader = csv.DictReader(csvfile)
 
     for row in reader:
-        website = re.escape(row['website'])
+        website = re.escape(row['url'])
         username = re.escape(row['username'])
         password = re.escape(row['password'])
 
