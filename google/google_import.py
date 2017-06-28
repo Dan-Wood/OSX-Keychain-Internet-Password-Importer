@@ -4,19 +4,24 @@ import csv, os, re
 count = 0
 
 #CSV file to load
-csvFile = 'example_google_password_list.csv'
+csvFile = 'googlepass.csv'
 
 #Open the CSV file, loop through each line and run the add-internet-password command
 with open(csvFile) as csvfile:
     reader = csv.DictReader(csvfile)
 
     for row in reader:
-        website = re.escape(row['url'])
-        username = re.escape(row['username'])
-        password = re.escape(row['password'])
+
+        url = False
+        username = False
+        password = False
+
+        if row['url'] : website = re.escape(row['url'])
+        if row['username'] : username = re.escape(row['username'])
+        if row['password'] : password = re.escape(row['password'])
 
         if username and password and website :
-            os.system("security add-internet-password -U -s " + website + " -a " + username + " -w " + password)
+            os.system("security add-internet-password -U -s " + website + " -a " + username + " -w " + password + " -T /Applications/Safari.app")
             count += 1
 
 print "Total of", count, "passwords, either inserted or updated."
